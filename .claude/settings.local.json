@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la /d:/work/AI_project/project/CodeEcho/)",
+      "Read(//d:/work/AI_project/project/**)",
+      "Bash(find /d:/work/AI_project/project/CodeEcho/ -type f -not -path \"*/.git/*\" -not -path \"*/node_modules/*\" | head -100)",
+      "Bash(ls -la \"d:/work/AI_project/project/CodeEcho/\" 2>/dev/null || ls -la \"/mnt/d/work/AI_project/project/CodeEcho/\" 2>/dev/null || ls -la \"/d/work/AI_project/project/CodeEcho/\" 2>/dev/null)",
+      "Read(//mnt/d/work/AI_project/project/**)"
+    ]
+  }
+}

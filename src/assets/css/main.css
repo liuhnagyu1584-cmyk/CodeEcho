@@ -1,0 +1,76 @@
+.button {
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: none;
+   cursor: pointer;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: 0.2s;
+}
+
+@font-face {
+  font-family: "iconfont";
+  src: url("../fonts/icomoon.eot");
+  src:
+    url("../fonts/icomoon.eot") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf") format("truetype"),
+    url("../fonts/icomoon.woff") format("woff"),
+    url("../fonts/icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+[class*="icon-"],
+[class^="icon-"] {
+  font-family: "iconfont";
+  speak-as: none;
+  font-style: normal;
+  line-height: 1;
+  vertical-align: middle;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dropdown::before {
+  content: "\e900";
+}
+
+.icon-select::before {
+  content: "\e901";
+}
+
+.icon-loading::before {
+  content: "\e902";
+}
+
+.icon-importance::before {
+  content: "\e903";
+}
+
+.icon-search::before {
+  content: "\e904";
+}
+
+.icon-back::before {
+  content: "\e905";
+}
+
+.icon-start::before {
+  content: "\e906";
+}
+
+.icon-warning::before {
+  content: "\e907";
+}
+
+.icon-download::before {
+  content: "\e908";
+}
+
+.icon-copy::before {
+  content: "\e909";
+}

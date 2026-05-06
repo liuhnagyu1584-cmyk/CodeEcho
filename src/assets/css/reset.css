@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  color: #333;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "Lucida Grande", "Lucida Sans Unicode", "Arial";
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body,
+dd,
+dl,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+p,
+ul,
+hr {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+summary,
+time {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+address,
+caption,
+cite,
+code,
+em,
+th,
+p,
+a,
+li,
+td,
+b,
+i,
+div {
+  font-family: inherit;
+  line-height: 1.5;
+  font-size: inherit;
+}
+
+img {
+  max-width: 100%;
+  border: 0;
+  height: auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  color: #2c67ff;
+  text-decoration: none;
+  outline: 0;
+}
+
+a:focus {
+  outline: 0;
+}
+
+a:active,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #2c67ff;
+}
+
+a:hover {
+  color: #2c67ff;
+  text-decoration: underline;
+}
+
+hr {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 0;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

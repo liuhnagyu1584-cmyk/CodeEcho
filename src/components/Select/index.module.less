@@ -1,0 +1,111 @@
+@primary-color: #fff;
+@border-color: #555;
+@hover-bg: #007acc;
+@selected-bg: #007acc;
+@bg-color: #3c3c3c;
+@font-size: 12px;
+@font-color: #fff;
+
+.selectContainer {
+  position: relative;
+  font-size: @font-size;
+  user-select: none;
+  color: @font-color;
+
+  .selectTrigger {
+    padding: 5px 10px;
+    border: 1px solid @border-color;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: @bg-color;
+    transition: all 0.3s;
+
+    &.active,
+    &:hover:not(.disabled) {
+      border-color: @primary-color;
+    }
+
+    &.disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+
+    .placeholder {
+      color: #bfbfbf;
+    }
+
+    > span {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .selectMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    margin: 4px 0 0;
+    padding: 4px 0;
+    background: @bg-color;
+    border-radius: 4px;
+    box-shadow:
+      0 3px 6px -4px rgba(0, 0, 0, 0.12),
+      0 6px 16px 0 rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+    max-height: 250px;
+    overflow-y: auto;
+    list-style: none;
+
+    .selectOption {
+      padding: 7px 12px;
+      cursor: pointer;
+      transition: background 0.3s;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: @font-size;
+      border-radius: 4px;
+
+      &:hover {
+        background-color: @hover-bg;
+      }
+
+      &.selected {
+        background-color: @selected-bg;
+        font-weight: 600;
+        color: @primary-color;
+      }
+
+      &.disabled {
+        color: #bfbfbf;
+        cursor: not-allowed;
+        background-color: transparent;
+      }
+    }
+
+    .selectEmpty {
+      padding: 7px 12px;
+      color: @font-color;
+      text-align: center;
+    }
+  }
+
+  .arrowIcon {
+    transition: transform 0.3s;
+    font-size: 12px;
+    color: @font-color;
+
+    &.down {
+      transform: rotate(0deg);
+    }
+
+    &.up {
+      transform: rotate(180deg);
+    }
+  }
+}
